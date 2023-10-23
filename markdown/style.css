@@ -1,0 +1,115 @@
+li {
+    line-height: 35px;
+    height: auto;
+}
+
+.contains-task-list li {
+    margin-left: 24px !important;
+}
+
+.contains-task-list .contains-task-list {
+    padding-left: 50px;
+} 
+
+.contains-task-list .task-list-item {
+    list-style: none;
+    margin-left: 0px !important;
+}
+
+.task-list-item-checkbox {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px !important;
+}
+
+.task-list-item label {
+    /* color: blue !important; */
+    display: flex !important;
+    align-items: center !important;
+}
+
+.task-list-item label a {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+now::before {
+    content: "Task: In progress";
+}
+
+remember::before {
+    content: "remember";
+}
+
+blocked::before {
+    content: "blocked";
+}
+
+next::before {
+    content: "To-do: next";
+}
+
+x::before {
+    content: "Status: ";
+}
+
+y::before {
+    content: "Task: ";
+}
+
+z::before {
+    content: "Task: ";
+}
+
+others::before {
+    content: "third-party";
+}
+
+remember, blocked, now, next, others, x, y, z {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    color:white;
+    background-color: #326da8;
+    border: 1px solid #1e4a2f;
+    display: inline-block;
+    line-height: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 12px;
+    font-weight:bold;
+}
+
+x {
+    background-color: #5419dd;
+    border: 1px solid rgb(233, 247, 38);
+}
+
+y {
+    background-color: #ddaf19;
+    color: black;
+    border: 1px solid white;
+}
+
+z {
+    background-color: #59b37b;
+    color: white;
+    border: 1px solid white;
+}
+
+blocked {
+    background-color: #f54263;
+}
+
+now {
+    background-color: #59b37b;
+}
+
+next {
+    background-color: #34c6eb;
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgb(43, 223, 73);
+}
