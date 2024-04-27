@@ -2,8 +2,17 @@
 This file contains the css styles used to power the preview of markdown files in vs code.
 It is hosted on this github repo:https://github.com/akwanashie/doc-tools 
 It can be accessed via the jsdelivr CDN (as github raw URL does not allow imports to iframes).
-For example we can view a specific version/commit using: https://cdn.jsdelivr.net/gh/akwanashie/doc-tools@80c295aa61e60c89fa1b6e155f80050fcc023bb2/markdown/style.css
-Can view latest using: https://cdn.jsdelivr.net/gh/akwanashie/doc-tools/markdown/style.css
+
+Follow the steps below to make changes:
+- Raise a PR with the css changes
+- Merge
+- Check your changes by accessing the file using the commit sha. 
+    - For example: https://cdn.jsdelivr.net/gh/akwanashie/doc-tools@80c295aa61e60c89fa1b6e155f80050fcc023bb2/markdown/style.css
+- The main file may still be cached and not pick up the changes
+    - For example: https://cdn.jsdelivr.net/gh/akwanashie/doc-tools/markdown/style.css
+- Purge the jsdelivr cache by visiting https://www.jsdelivr.com/tools/purge and providing the URL: https://cdn.jsdelivr.net/gh/akwanashie/doc-tools/markdown/style.css
+- Configure your vscode markdown plugin to point to the css file (add a random number to force vscode to refresh the file)
+    { "markdown.styles": [ "https://cdn.jsdelivr.net/gh/akwanashie/doc-tools/markdown/style.css?v=2332323" ] }
 */
 
 li {
