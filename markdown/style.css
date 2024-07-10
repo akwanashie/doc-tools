@@ -75,7 +75,7 @@ y::before {
 }
 
 z::before {
-    content: "Task: ";
+    content: "";
 }
 
 others::before {
@@ -112,12 +112,13 @@ y {
 
 z {
     background-color: #59b37b;
-    color: white;
+    color: black;
     border: 1px solid white;
 }
 
 blocked {
     background-color: #f54263;
+    color: black;
 }
 
 now {
