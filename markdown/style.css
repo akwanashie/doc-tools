@@ -127,10 +127,14 @@ blocked {
 
 b {
     background-color: #f54263;
+    color: black;
+    border: 1px solid white;
 }
 
 now {
     background-color: #59b37b;
+    color: black;
+    border: 1px solid white;
 }
 
 next {
