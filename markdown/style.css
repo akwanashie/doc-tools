@@ -62,6 +62,10 @@ blocked::before {
     content: "blocked";
 }
 
+b::before {
+    content: "Blocked: ";
+}
+
 next::before {
     content: "To-do: next";
 }
@@ -82,7 +86,7 @@ others::before {
     content: "third-party";
 }
 
-remember, blocked, now, next, others, x, y, z {
+remember, blocked, b, now, next, others, x, y, z {
     padding-right: 5px;
     padding-left: 5px;
     margin-left: 10px;
@@ -121,9 +125,12 @@ blocked {
     color: black;
 }
 
+b {
+    background-color: #f54263;
+}
+
 now {
     background-color: #59b37b;
-    color: black;
 }
 
 next {
