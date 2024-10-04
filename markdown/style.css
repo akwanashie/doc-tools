@@ -123,11 +123,11 @@ z {
 blocked {
     background-color: #f54263;
     color: black;
+    border: 1px solid white;
 }
 
 b {
     background-color: #f54263;
-    color: black;
     border: 1px solid white;
 }
 
@@ -141,5 +141,5 @@ next {
     background-color: #34c6eb;
     color: black;
     font-weight: bold;
-    border: 1px solid rgb(43, 223, 73);
+    border: 1px solid white;
 }
